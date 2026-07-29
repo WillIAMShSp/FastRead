@@ -1,0 +1,41 @@
+{
+  "name": "fastread",
+  "version": "1.0.0",
+  "description": "An RSVP application that uses OCR and allows for easy speed reading of text documents.",
+  "keywords": [
+    "electron"
+  ],
+  "homepage": "https://github.com/WillIAMShSp/FastRead#readme",
+  "bugs": {
+    "url": "https://github.com/WillIAMShSp/FastRead/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillIAMShSp/FastRead.git"
+  },
+  "license": "MIT",
+  "author": "Luis Camilo Alvarez Carrau",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "electron": "cross-env NODE_ENV=development electron src/main/main",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-react": "^8.0.1",
+    "babel-loader": "^10.1.1",
+    "electron": "^43.2.0",
+    "html-webpack-plugin": "^5.6.8",
+    "webpack": "^5.109.2",
+    "webpack-cli": "^7.2.2",
+    "webpack-dev-server": "^6.0.0"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
